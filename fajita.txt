@@ -5,11 +5,23 @@ repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
 /opt/crave/resync.sh
 
 # Remove existing directories
+
 rm -rf device/oneplus/fajita
 rm -rf device/oneplus/sdm845-common
 rm -rf device/lineage/sepolicy
 rm -rf device/qcom/sepolicy_vndr/legacy-um
 rm -rf kernel/oneplus/sdm845
+rm -rf vendor/oneplus/fajita
+rm -rf vendor/oneplus/sdm845-common
+rm -rf hardware/oneplus
+rm -rf hardware/qcom-caf/sdm845/media
+rm -rf hardware/qcom-caf/sdm845/audio
+rm -rf hardware/qcom-caf/sdm845/display
+rm -rf frameworks/native
+rm -rf frameworks/base
+rm -rf external/libhybris
+rm -rf vendor/lindroid
+rm -rf external/lxc
 rm -r vendor/gms/common/common-vendor.mk
 
 # Clone repositories
